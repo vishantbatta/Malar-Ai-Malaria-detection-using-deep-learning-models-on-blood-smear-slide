@@ -5,8 +5,9 @@ Powered by pre-trained ResNet-50, cell-phone microscope and a staining kit, this
 
 Files- 
 -Build Dataset- @Tanay The data we have is categorised into 2- Parasitised and Non- Parasitised. Your task is to use this this file to distribute the dataset as Training, Testing and Validating. So, we will have 3 folders Testing Data, Training Data and Validation Data, with subfolders as Parasitised and non-parasitised. After that, iterate a loop over this dataset to create 3 numpy arrays as Testing_images, Training_images, Validation_images [along with labels] in such a way that @Srikanth & @Rohan can import these numpy arrays from this file. Refer OS library.
-Rescale the images by 255
-Sample Training dataset 
+Rescale the images by 255.
+
+Sample Training dataset- 
 
 [[0.2,0.25,......],[Parasitised]], 
 
