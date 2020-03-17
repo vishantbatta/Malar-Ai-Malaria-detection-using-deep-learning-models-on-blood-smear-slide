@@ -20,7 +20,7 @@ n= number of images
 array will be n x 2
 in the first column, each element will be the a x b image and in second column, it will be label.
 
-a x b - pixel size of the image
+3 x a x b - pixel size of the image
 
 
 -Build Model- @Rohan Use Keras library to build a ResNet model and train+validate it [Optimizer: opt, Loss: BinaryCrossEntropy, metrics: Accuracy] in such a way that @Srikanth can test using the testing data [Using this file].
