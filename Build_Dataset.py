@@ -18,7 +18,7 @@ DATADIR = r"C:\Users\hp\Desktop\MALAR-AI\cell_images\Uninfected"       ###enter 
 path = os.path.join(DATADIR)
 for img in os.listdir(path):
     try:
-        img_array = cv2.imread(os.path.join(path, img),cv2.IMREAD_GRAYSCALE)
+        img_array = cv2.imread(os.path.join(path, img),cv2.IMREAD_COLOR)
         img_array=img_array/255
         training_data.append([img_array,"non-parasitised"])
     except Exception as e:
