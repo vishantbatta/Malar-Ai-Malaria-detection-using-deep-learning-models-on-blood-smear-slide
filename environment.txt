@@ -1,0 +1,7 @@
+h5py==2.10.0
+Keras==2.3.1
+numpy==1.18.2
+opencv-contrib-python==4.1.2.30
+opencv-python==4.1.2.30
+tensorflow==1.15.2
+silence_tensorflow==1.1.1
