@@ -3,32 +3,30 @@ Malar-ai is a handy device(based on smartphones) used to detect probable malaria
 
 Powered by pre-trained ResNet-50, cell-phone microscope and a staining kit, this setup is capable of performing at an accuracy of >95%, hence highly useful in remote and inaccessible areas. 
 
-Files- 
--Build Dataset- @Tanay The data we have is categorised into 2- Parasitised and Non- Parasitised. Your task is to use this this file to distribute the dataset as Training, Testing and Validating. So, we will have 3 folders Testing Data, Training Data and Validation Data, with subfolders as Parasitised and non-parasitised. After that, iterate a loop over this dataset to create 3 numpy arrays as Testing_images, Training_images, Validation_images [along with labels] in such a way that @Srikanth & @Rohan can import these numpy arrays from this file. Refer OS library.
-Rescale the images by 255.
+## Table of contents
 
-Sample Training dataset- 
-
-[[0.2,0.25,......],[Parasitised]], 
-
-[[0.23,0.26,......],[Unparasitised]] 
-
-so on
-
-n= number of images
-
-array will be n x 2
-in the first column, each element will be the a x b image and in second column, it will be label.
-
-3 x a x b - pixel size of the image
+- [Getting started](#getting-started)
+	- [Setting up the environment](#setting-up-the-environment)
+	- [Using the classifier](#using-the-classifier)
+- [Credits](#credits)
 
 
--Build Model- @Rohan Use Keras library to build a ResNet model and train+validate it [Optimizer: opt, Loss: BinaryCrossEntropy, metrics: Accuracy] in such a way that @Srikanth can test using the testing data [Using this file].
+## Getting started
+### Setting up the environment
+1. Clone the repo. 
+2. Python version 3.6 or above is recommended. We also recommend you use a virtual environment. To know how to set up a virtual environment in python, click [here](https://youtu.be/N5vscPTWKOk). Once the environment has been created and activated, navigate to the cloned directory using command prompt/terminal and enter the following:
+```pip install -r environment.txt```
+This will install the dependencies.
+If using ```conda```, you can just enter following command to create the environment as well as install the dependencies:
+```conda env create -f Malar-AI.yml```
 
--Test_Model- @Srikanth, test the model made by @Rohan and plot the graph of training loss+accuracy vs epoch.[save it to JPG]
+### Using the classifier
 
-Initially write the code in your respective machines and then upload here after testing
+Once you have cloned the repo and have the environment set up, navigate to the cloned directory in command prompt/terminal and type this command:
+```python "malaria predict.py" -i [IMAGE FILE]```
 
-Write the comments preferably after each step and while committing to this repo!
+Two sample images have been provided.
 
-Good Luck :)
+## Credits
+The dataset used for training the model was obtained from the website of Lister Hill National Center for Biomedical Communications and can be found [here](https://lhncbc.nlm.nih.gov/publication/pub9932). 
+
