@@ -1,7 +1,7 @@
 # Malar-Ai
 Malar-ai is a handy device(based on smartphones) used to detect probable malaria infection using blood smear slides. 
 
-Powered by pre-trained ResNet-50, cell-phone microscope and a staining kit, this setup is capable of performing at an accuracy of >95%, hence highly useful in remote and inaccessible areas. 
+Powered by ResNet-50, cell-phone microscope and a staining kit, this setup is capable of performing at an accuracy of >95%, hence highly useful in remote and inaccessible areas. 
 
 We aim to enhance the ease of Malaria testing in areas where the availability of testing equipments is not adequate. We are building a mobile app using which the health care worker can capture the photo of a blood smear slide of a person, and predict the possibility of Malaria. 
 
