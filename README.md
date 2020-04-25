@@ -3,6 +3,10 @@ Malar-ai is a handy device(based on smartphones) used to detect probable malaria
 
 Powered by pre-trained ResNet-50, cell-phone microscope and a staining kit, this setup is capable of performing at an accuracy of >95%, hence highly useful in remote and inaccessible areas. 
 
+We aim to enhance the ease of Malaria testing in areas where the availability of testing equipments is not adequate. We are building a mobile app using which the health care worker can capture the photo of a blood smear slide of a person, and predict the possibility of Malaria. 
+
+We have developed the machine learning model, and are working on an android app and potentially a lens. This project is maintained by the students Club of Sustainability & Innovation, Indian Institute of Technology(IIT-BHU), Varanasi. For any queries/potential collaborations/opportunites, mail at csi.iitbhu@gmail.com  
+
 ## Table of contents
 
 - [Getting started](#getting-started)
@@ -29,4 +33,3 @@ Two sample images have been provided.
 
 ## Credits
 The dataset used for training the model was obtained from the website of Lister Hill National Center for Biomedical Communications and can be found [here](https://lhncbc.nlm.nih.gov/publication/pub9932). 
-
